@@ -1,8 +1,9 @@
+# phone charger
 def phone(dead)
   if dead >=10
-    sample :bd_klub
+    sample :bd_klub, rate: 1
   else
-    sample :bd_tek, rate: dead
+    sample :bd_tek, rate: 1
     sleep 1
     phone(dead + 1)
   end
@@ -18,7 +19,7 @@ end
 def phone_charged
   1==[1,2].choose
 end
-2. times do
+5. times do
   dead(10)
   charge(5)
   sleep 1
